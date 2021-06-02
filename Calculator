@@ -1,0 +1,95 @@
+package Calculator.java;
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator object = new Calculator();
+		int l = 0;
+		while(l<5) {
+		System.out.println("enter witch operation +,-,*,%,/");
+		Scanner sc = new Scanner(System.in);
+		String n = sc.nextLine();
+
+		if(n.equals("+")) {
+			object.addMethod();
+		}
+		if(n.equals("-")) {
+			object.subractMethod();
+		}
+		if(n.equals("*")) {
+			object.multiplayMethod();
+		}
+		if(n.equals("%")) {
+			object.madulesMethod();
+		}
+		if(n.equals("/")) {
+			object.divesonMethod();
+		}
+			
+		System.out.println("continue operation type yes/no");
+		String s = sc.nextLine();
+		if(s.equals("yes")) {
+			l++;
+		}
+		else {
+			System.out.println("Thankyou!");
+			break;
+		}
+		}
+	}
+
+	private void divesonMethod() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the first number: ");
+		int no1 = sc.nextInt();
+		System.out.println("enter the second number: ");
+		int no2 = sc.nextInt();
+		System.out.println(no1 / no2);
+	}
+
+	private void subractMethod() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the first number: ");
+		int no1 = sc.nextInt();
+		System.out.println("enter the second number: ");
+		int no2 = sc.nextInt();
+		System.out.println(no1 - no2);
+	}
+
+	private void madulesMethod() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the first number: ");
+		int no1 = sc.nextInt();
+		System.out.println("enter the second number: ");
+		int no2 = sc.nextInt();
+		System.out.println(no1 % no2);
+	}
+
+	private void multiplayMethod() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the first number: ");
+		int no1 = sc.nextInt();
+		System.out.println("enter the second number: ");
+		int no2 = sc.nextInt();
+		System.out.println(no1 * no2);
+	}
+
+	private void addMethod() {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the first number: ");
+		int no1 = sc.nextInt();
+		System.out.println("enter the second number: ");
+		int no2 = sc.nextInt();
+		System.out.println(no1 + no2);
+	}
+
+}
